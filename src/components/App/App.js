@@ -1,6 +1,9 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import MonthList from '../MonthList/MonthList'
+
 
 function App() {
 
@@ -11,6 +14,8 @@ function App() {
   }, []);
 
   const getMonths = () =>{
+    //- Use `axios` to retrieve (`GET`) data from `/calendar` and store it in `App.js`.
+    // `/calendar` returns an array of calendar month names and ids.
     axios({
       method: 'GET',
       url: '/calendar'
@@ -36,6 +41,7 @@ function App() {
       </header>
       <br />
       <p>List of months goes here</p>
+      <MonthList list={MonthList} />
     </div>
   );
 }

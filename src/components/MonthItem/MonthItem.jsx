@@ -1,0 +1,1 @@
+//- Create a new component called `MonthItem`. `MonthItem` should be the Month to display.
