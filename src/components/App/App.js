@@ -4,6 +4,29 @@ import './App.css';
 
 function App() {
 
+  const [calMonths, setCalMonths] = useState([]);
+
+  useEffect( () =>{
+    getMonths();
+  }, []);
+
+  const getMonths = () =>{
+    axios({
+      method: 'GET',
+      url: '/calendar'
+    })
+    .then((response) => {
+      console.log('get response', response);
+      setCalMonths(response.data);
+    })
+    .catch((error) => {
+      console.log('error on Get', error);
+    });
+
+  }// end Get
+
+
+
   return (
     <div className="App">
       <header className="App-header">
