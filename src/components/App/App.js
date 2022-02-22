@@ -2,12 +2,12 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import MonthList from '../MonthList/MonthList'
+//import MonthList from '../MonthList/MonthList.jsx';
 
 
 function App() {
 
-  const [calMonths, setCalMonths] = useState([]);
+  const [monthItems, setCalMonths] = useState([]);
 
   useEffect( () =>{
     getMonths();
@@ -41,7 +41,7 @@ function App() {
       </header>
       <br />
       <p>List of months goes here</p>
-      <MonthList list={MonthList} />
+        <MonthList list={monthItems} />
     </div>
   );
 }
