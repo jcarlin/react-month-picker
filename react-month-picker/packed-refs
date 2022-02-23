@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+9d91efad54776ff9534428370ecc9d6ef9799a2d refs/remotes/origin/feature-audit-fix
+2f1afc719c9d6fb9b37d34ad02fa65dd72354816 refs/remotes/origin/hooks
+4e91e5d1c8fe43da0ec673660c2125568ac98bfb refs/remotes/origin/master
+5215ba44cfaaeb1b3bb4a26cf68685d99f68b85e refs/remotes/origin/stage-3-update
+42ee9d07dad9f4ea91addcc3de5e5577eb481ff6 refs/remotes/origin/testing-poc
