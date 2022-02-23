@@ -3,7 +3,7 @@ function HeaderComponent({monthName}) {
     return (
         <>
             <h3>
-                Clicked Month: { monthName }
+                { monthName }
             </h3>
         </>
     )

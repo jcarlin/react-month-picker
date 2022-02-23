@@ -17,7 +17,7 @@ function App() {
   // it follows this pattern: [current state, function to update current state], initialized to an initial value (empty array in ex. below)
   const [calendarData, setCalendarData] = useState([]);
   // create clickedMonth state "item" and setClickedMonth function to be used to set the state. Also, set the initial state to an empty string (useState("")).
-  const [clickedMonth, setClickedMonth] = useState("");
+  const [clickedMonth, setClickedMonth] = useState("make a selection");
 
   // useEffect is a react pattern for setting up side effects
   useEffect( () =>{
